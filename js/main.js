@@ -4,7 +4,7 @@
   var time = document.querySelector('.Hud-time');
   var colour = document.querySelector('.Hud-colour');
 
-  requestAnimationFrame(step);
+  window.requestAnimationFrame(step);
 
   function step() {
 
