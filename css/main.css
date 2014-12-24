@@ -1,0 +1,33 @@
+body {
+  color: white;
+  font-family: 'Droid Sans', sans-serif;
+  transition: background-color 1000ms;
+}
+
+.Hud {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.Hud-wrapper {
+  margin: auto;
+  text-align: center;
+}
+
+.Hud-time,
+.Hud-color {
+  display: block;
+}
+
+.Hud-time {
+  font-size: 5em;
+}
+
+.Hud-colour {
+  font-size: 2em;
+  line-height: 4;
+}
