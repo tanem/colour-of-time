@@ -1,10 +1,14 @@
 body {
   color: white;
   font-family: 'Droid Sans', sans-serif;
-  transition: background-color 1000ms;
+  -webkit-transition: background-color 1000ms;
+          transition: background-color 1000ms;
 }
 
 .Hud {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   position: absolute;
   top: 0;
