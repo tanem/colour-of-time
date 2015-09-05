@@ -6,7 +6,7 @@ My take on [What colour is it?](http://whatcolourisit.scn9a.org/) All credit to 
 
 ## Usage
 
-I use [this repo's GitHub pages site](tanem.github.io/colour-of-time) as a custom Mac OS X screensaver, via [WebViewScreenSaver](https://github.com/liquidx/webviewscreensaver).
+I use [this repo's GitHub pages site](http://tanem.github.io/colour-of-time) as a custom Mac OS X screensaver, via [WebViewScreenSaver](https://github.com/liquidx/webviewscreensaver).
 
 ## License
 
