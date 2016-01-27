@@ -1,22 +1,21 @@
 (function(){
-  
-  var body = document.querySelector('body');
-  var time = document.querySelector('.Hud-time');
-  var colour = document.querySelector('.Hud-colour');
+
+  var bodyEl = document.querySelector('body');
+  var timeEl = document.querySelector('.Hud-time');
+  var dateEl = document.querySelector('.Hud-date');
 
   window.requestAnimationFrame(step);
 
   function step() {
 
-    var now = new Date();
-    var h = pad(now.getHours());
-    var m = pad(now.getMinutes());
-    var s = pad(now.getSeconds());
-    var hex = '#' + h + m + s;
+    var now = moment();
+    var time = now.format('HH:mm:ss');
+    var date = now.format('dddd, MMMM Do YYYY');
+    var hex = '#' + now.format('HHmmss');
 
-    body.style.backgroundColor = hex;
-    colour.textContent = hex;
-    time.textContent = h + ':' + m + ':' + s;
+    bodyEl.style.backgroundColor = hex;
+    timeEl.textContent = time;
+    dateEl.textContent = date;
 
     window.requestAnimationFrame(step);
 
@@ -25,5 +24,5 @@
   function pad(t) {
     return t < 10 ? '0' + t : t;
   }
-  
+
 }());

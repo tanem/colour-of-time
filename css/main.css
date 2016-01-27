@@ -23,7 +23,7 @@ body {
 }
 
 .Hud-time,
-.Hud-color {
+.Hud-date {
   display: block;
 }
 
@@ -31,7 +31,7 @@ body {
   font-size: 5em;
 }
 
-.Hud-colour {
-  font-size: 2em;
+.Hud-date {
+  font-size: 1.5em;
   line-height: 4;
 }
